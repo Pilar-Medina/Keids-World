@@ -1,0 +1,115 @@
+html{
+    font-size: 1.5rem;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+form {
+    font-family: 'Nunito', sans-serif;
+  
+}
+
+
+h1{
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    }
+
+    
+.displaycontact{
+    display:grid;
+    grid-template-columns: 2fr, 0.5fr;
+    grid-template-rows: 1fr, 3fr, 2fr,;
+    grid-template-areas: 
+    "logo titulo"
+    "tablaform tablaform"
+    "footer footer"
+    ;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.presentacion img h1{
+display: flexbox;
+flex-direction: row;
+flex-flow: wrap;
+
+}
+
+.tablaform {
+    background-color: lightcoral;
+    grid-area: tablaform;
+}
+
+
+.fondo {
+background-image: url(https://i.pinimg.com/originals/8e/60/39/8e6039a4c9cb6553c2bfcdb042ce8f21.jpg);
+}
+
+
+.ul{
+    margin: 50px;
+}
+
+
+
+.displayindex{
+    display:grid;
+    grid-template-columns: 2fr, 2fr;
+    grid-template-rows: 0.5fr, 1fr, 2fr, 0.5fr;
+    grid-template-areas:
+    ". menu"
+    "logo titulo"
+    "imagen imagen"
+    "footer wpp";
+
+}
+
+.menu ul li{
+    font-size: 15px; 
+    background-color: cornflowerblue;
+    color: lightcoral;
+    justify-content: right;
+    grid-area: menu;
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+    align-self: left;
+    width:fit-content;
+    grid-area: logo;
+    
+}
+
+.titulo h1{
+    background-color: cornflowerblue;
+    color: lightcoral;
+    grid-area: titulo;
+}
+
+.imagen img{
+    grid-area: imagen;
+}
+
+.redesfooter img{
+    width: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    grid-area: footer;
+}
+
+.wpp {
+    justify-content: flex-end;
+    width: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    grid-area: wpp;
+}
